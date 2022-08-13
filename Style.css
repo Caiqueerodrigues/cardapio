@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/*FORMATAÇÃO DO TITULO PRINCIPAL*/
+h1 span {
+    display:inline;
+    }
+    h1 span#p {
+    color: black; 
+    }
+    h1 span#c {
+    color: #995000
+    }
+
+body {
+    background-color: #ffedd5; /*todo hexadecimal (cor) vai de 0 até F, sendo 0=PRETO e F=BRANCO*/
+    font-family: 'roboto', sans-serif;
+}
+
+    * { /*o * é seletor universal, ele remove ou adiciona código todo de uma  vez*/
+    margin: 0px;
+    padding: 0px;
+    }
+
+/*fontes*/
+h1, h2, h3, .preco {
+    font-family: 'roboto serif';
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #202c2a;
+
+}
+
+    /*FORMATAÇÃO DO HEADER*/
+header {
+    padding: 32px 0px;
+    text-align: center;
+}
+header .h1 {
+    margin-bottom: 4px;
+    font-size: 28px;
+    line-height: 33px;
+}
+header p {
+    color: rgba(0, 0, 0, 0.7);
+}
+    header,section { /* quando for a mesma configuração para duas "caixas" pode solocar na mesma linha separadas por , */
+        max-width:300px ; /*largura maxima da CAIXA*/
+        margin:0px auto;
+        
+    }
+
+/*FORMATAÇÃO DAS SECTION*/
+section {
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+section.produtos h2 {
+    background-color: #fed7aa;
+    text-align: center;
+    padding: 8px 16px;
+}
+
+/*FORMATAÇÃO DAS LISTAS*/
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex; /*FLEX coloca duas caixas do mesmo grupo uma de FRENTE pra OUTRA*/
+    margin-bottom: 16px;
+}
+li .detalhes {
+    max-width: 240px;
+}
+li .detalhes h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 19px;
+}
+.detalhes p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 21px;
+}
